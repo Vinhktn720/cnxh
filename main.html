@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm Chủ Nghĩa Xã Hội Khoa Học</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trắc Nghiệm Chủ Nghĩa Xã Hội Khoa Học</h1>
+        <form id="quizForm">
+            <!-- Nơi hiển thị danh sách câu hỏi -->
+            <div id="questionsContainer"></div>
+
+            <button type="button" onclick="submitQuiz()">Nộp Bài</button>
+        </form>
+
+        <!-- Popup kết quả -->
+        <div id="resultPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>Kết Quả Trắc Nghiệm</h2>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import các file JavaScript -->
+    <script type="module" src="./animation.js"></script>
+</body>
+</html>
